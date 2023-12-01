@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="647.0" prefWidth="1175.0" style="-fx-background-color: beige; -fx-border-width: 14; -fx-border-color: grey;">
+      <children>
+         <HBox layoutX="200.0" layoutY="88.0" prefHeight="49.0" prefWidth="777.0">
+            <children>
+               <GridPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="777.0">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <TextField alignment="CENTER" editable="false" prefHeight="45.0" prefWidth="113.0" style="-fx-background-color: lightblue; -fx-border-color: grey;" text="Monday">
+                        <font>
+                           <Font name="Cambria" size="18.0" />
+                        </font>
+                     </TextField>
+                     <TextField alignment="CENTER" editable="false" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: lightblue; -fx-border-color: grey;" text="Tuesday" GridPane.columnIndex="1">
+                        <font>
+                           <Font name="Cambria" size="18.0" />
+                        </font>
+                     </TextField>
+                     <TextField alignment="CENTER" editable="false" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: lightblue; -fx-border-color: grey;" text="Wednesday" GridPane.columnIndex="2">
+                        <font>
+                           <Font name="Cambria" size="18.0" />
+                        </font>
+                     </TextField>
+                     <TextField alignment="CENTER" editable="false" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: lightblue; -fx-border-color: grey;" text="Thursday" GridPane.columnIndex="3">
+                        <font>
+                           <Font name="Cambria" size="18.0" />
+                        </font>
+                     </TextField>
+                     <TextField alignment="CENTER" editable="false" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: lightblue; -fx-border-color: grey;" text="Friday" GridPane.columnIndex="4">
+                        <font>
+                           <Font name="Cambria" size="18.0" />
+                        </font>
+                     </TextField>
+                     <TextField alignment="CENTER" editable="false" prefHeight="45.0" prefWidth="111.0" style="-fx-background-color: lightblue; -fx-border-color: grey;" text="Saturday" GridPane.columnIndex="5">
+                        <font>
+                           <Font name="Cambria" size="18.0" />
+                        </font>
+                     </TextField>
+                     <TextField alignment="CENTER" editable="false" prefHeight="45.0" prefWidth="213.0" style="-fx-background-color: lightblue; -fx-border-color: grey;" text="Sunday" GridPane.columnIndex="6">
+                        <font>
+                           <Font name="Cambria" size="18.0" />
+                        </font>
+                     </TextField>
+                  </children>
+               </GridPane>
+            </children>
+         </HBox>
+         <HBox layoutX="201.0" layoutY="134.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="775.0">
+            <children>
+               <VBox fx:id="monday" prefHeight="371.0" prefWidth="113.0" style="-fx-border-color: grey;" />
+               <VBox fx:id="tuesday" prefHeight="438.0" prefWidth="113.0" style="-fx-border-color: grey;" />
+               <VBox fx:id="wednesday" prefHeight="438.0" prefWidth="113.0" style="-fx-border-color: grey;" />
+               <VBox fx:id="thursday" prefHeight="438.0" prefWidth="113.0" style="-fx-border-color: grey;" />
+               <VBox fx:id="friday" prefHeight="371.0" prefWidth="113.0" style="-fx-border-color: grey;" />
+               <VBox fx:id="saturday" prefHeight="446.0" prefWidth="113.0" style="-fx-border-color: grey;" />
+               <VBox fx:id="sunday" prefHeight="446.0" prefWidth="113.0" style="-fx-border-color: grey;" />
+            </children>
+         </HBox>
+         <HBox layoutX="536.0" layoutY="43.0" prefHeight="51.0" prefWidth="327.0" />
+         <VBox fx:id="taskQueue" layoutX="1002.0" layoutY="137.0" prefHeight="201.0" prefWidth="128.0" style="-fx-border-color: grey; -fx-border-width: 1;" />
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1013.0" layoutY="96.0" prefHeight="30.0" prefWidth="105.0" text="My Tasks!">
+            <font>
+               <Font name="Cambria" size="18.0" />
+            </font>
+         </Label>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="384.0" prefHeight="24.0" prefWidth="127.0" text="My Categories!">
+            <font>
+               <Font name="Cambria" size="18.0" />
+            </font>
+         </Label>
+         <VBox fx:id="categoryList" layoutX="45.0" layoutY="417.0" prefHeight="164.0" prefWidth="128.0" style="-fx-border-color: grey; -fx-border-width: 1;" />
+         <VBox fx:id="searchTask" layoutX="1003.0" layoutY="380.0" prefHeight="201.0" prefWidth="128.0">
+            <children>
+               <ListView fx:id="taskListView" prefHeight="201.0" prefWidth="128.0" style="-fx-border-color: grey; -fx-background-color: beige; -fx-border-width: 1;" />
+            </children></VBox>
+         <Button fx:id="addTask" layoutX="54.0" layoutY="171.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: lightblue;" text="Add Task">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="addCategory" layoutX="54.0" layoutY="256.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: lightblue;" text="Add Category">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="addEvent" layoutX="54.0" layoutY="214.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: lightblue;" text="Add Event">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Button>
+         <Label layoutX="54.0" layoutY="305.0" prefHeight="16.0" prefWidth="65.0" text="Max Tasks:">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Label>
+         <ComboBox fx:id="maxTasks" layoutX="120.0" layoutY="300.0" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: lightblue;" />
+         <Label layoutX="51.1" layoutY="340.0" prefHeight="16.0" prefWidth="69.0" text="Max Events:">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Label>
+         <ComboBox fx:id="maxEvents" layoutX="121.0" layoutY="335.0" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: lightblue;" />
+         <Label fx:id="totalEvents" layoutX="765.0" layoutY="597.0" prefHeight="18.0" prefWidth="98.0" text="Total Events:">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="totalTasks" layoutX="546.0" layoutY="600.0" prefHeight="17.0" prefWidth="92.0" text="Total Tasks:">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="completedTasks" layoutX="305.0" layoutY="600.0" prefHeight="19.0" prefWidth="125.0" text="Completed Tasks:">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Label>
+         <Button fx:id="openFile" layoutX="57.0" layoutY="128.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="51.0" style="-fx-background-color: lightblue;" text="Open">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="save" contentDisplay="CENTER" layoutX="122.0" layoutY="128.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="51.0" style="-fx-background-color: lightblue;" text="Save">
+            <font>
+               <Font name="Cambria Bold" size="12.0" />
+            </font>
+         </Button>
+         <Label layoutX="94.0" layoutY="97.0" text="Menu">
+            <font>
+               <Font name="Cambria" size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="title" alignment="CENTER" layoutX="200.0" layoutY="34.0" prefHeight="39.0" prefWidth="776.0" promptText="Enter Title Here..." style="-fx-border-color: null; -fx-background-color: null;">
+            <font>
+               <Font name="Cambria" size="24.0" />
+            </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <effect>
+               <Glow />
+            </effect>
+         </TextField>
+      </children></AnchorPane>
+</Scene>
