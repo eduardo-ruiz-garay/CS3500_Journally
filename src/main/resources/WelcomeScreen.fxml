@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<Scene fx:id="scene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1160.0" style="-fx-background-color: beige; -fx-border-width: 14; -fx-border-color: grey;">
+      <children>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutY="2.0" prefHeight="616.0" prefWidth="1160.0" text="Welcome to your Bullet Journal">
+            <font>
+               <Font name="Cambria" size="36.0" />
+            </font>
+         </Label>
+         <Label layoutX="498.0" layoutY="358.0" text="Click on the screen to continue" />
+      </children></AnchorPane>
+</Scene>
